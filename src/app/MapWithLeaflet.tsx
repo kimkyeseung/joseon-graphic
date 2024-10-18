@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { MapContainer, TileLayer } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+import { MapContainer, TileLayer } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
 export const MapWithLeaflet = () => {
   return (
@@ -9,7 +9,7 @@ export const MapWithLeaflet = () => {
       center={[37.5326, 127.024612]} // 서울 중심 좌표
       zoom={7}
       scrollWheelZoom={false}
-      className="h-[80vh] w-full border-4 border-gray-700 rounded-lg shadow-lg"
+      className="h-[calc(100vh-56px)] w-full"
     >
       <TileLayer
         className="grayscale"
