@@ -22,7 +22,7 @@ const markerData: MarkerData[] = [
   { id: 2000, position: [33.4996, 126.5312], text: '제주' },
 ];
 
-export const MapWithLeaflet = () => {
+const MapWithLeaflet = () => {
   const { timelineValue } = useContext(HistoryContext);
   const [markers, setMarkers] = useState<MarkerData[]>([]);
 
@@ -38,6 +38,7 @@ export const MapWithLeaflet = () => {
       center={[37.5326, 127.024612]} // 서울 중심 좌표
       zoom={7}
       scrollWheelZoom={false}
+      zoomControl={false}
       className="h-[calc(100vh-56px)] w-full"
     >
       <TileLayer
@@ -54,3 +55,5 @@ export const MapWithLeaflet = () => {
     </MapContainer>
   );
 };
+
+export default MapWithLeaflet;
