@@ -5,10 +5,13 @@ export interface HistoryData {
   events: Event[];
 }
 
+export type EventType = 'enthrone' | 'die' | 'combat';
+
 export interface Event {
   title: string;
   description: string;
   position?: LatLngExpression;
+  type?: EventType;
 }
 
 export interface King {
