@@ -22,13 +22,24 @@ const Timeline = () => {
     [setTimelineValue, timelineValue, historyData.length],
   );
 
+  const handleKeydown = useCallback(
+    (e: KeyboardEvent) => {
+      if (['ArrowRight', 'ArrowDown'].includes(e.key)) {
+        setTimelineValue((val) => val + 1);
+      }
+    },
+    [setTimelineValue],
+  );
+
   useEffect(() => {
     window.addEventListener('wheel', handleScroll, { passive: false });
+    window.addEventListener('keydown', handleKeydown);
 
     return () => {
       window.removeEventListener('wheel', handleScroll);
+      window.removeEventListener('keydown', handleKeydown);
     };
-  }, [handleScroll]);
+  }, [handleScroll, handleKeydown]);
 
   const markerPosition = (timelineValue / (historyData.length - 1)) * 100;
 
