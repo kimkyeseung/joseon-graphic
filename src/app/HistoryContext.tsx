@@ -5,10 +5,13 @@ import {
   Dispatch,
   PropsWithChildren,
   SetStateAction,
+  useEffect,
   useState,
 } from 'react';
 import historyData from '@/data/history.json';
-import { HistoryData } from '@/types';
+import { Event, HistoryData } from '@/types';
+import { toast } from 'react-hot-toast';
+import { EventNotification } from '@/components/EventNotification';
 
 interface ContextType {
   timelineValue: number;
@@ -28,6 +31,14 @@ export const HistoryProvider = ({ children }: PropsWithChildren) => {
   const [timelineValue, setTimelineValue] = useState(0);
 
   const currentYear = historyData[timelineValue]?.year;
+
+  useEffect(() => {
+    historyData[timelineValue].events.forEach((event: Event) => {
+      toast.custom(<EventNotification event={event} year={currentYear} />, {
+        duration: Infinity,
+      });
+    });
+  }, [timelineValue]);
 
   return (
     <HistoryContext.Provider
