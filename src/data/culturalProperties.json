@@ -1,0 +1,58 @@
+[
+  {
+    "name": "경국대전",
+    "startedYear": 1394,
+    "finishedYear": 1394,
+    "description": "대한민국 보물 제1924호, 정도전이 서술하여 이성계에게 바친 사찬 법전",
+    "type": "document"
+  },
+  {
+    "name": "경복궁",
+    "startedYear": 1394,
+    "finishedYear": 1395,
+    "description": "390여 칸의 작은 규모로 처음 완공",
+    "type": "palace"
+  },
+  {
+    "name": "종묘",
+    "startedYear": 1394,
+    "finishedYear": 1395,
+    "description": "역대 왕과 왕비의 신주를 모시고 제사를 지내는 곳",
+    "type": "temple"
+  },
+  {
+    "name": "천상열차분야지도",
+    "startedYear": 1395,
+    "finishedYear": 1395,
+    "description": "국보 제228호, 석판에 새겨진 세계 최초 전천 천문도",
+    "type": "document"
+  },
+  {
+    "name": "숭례문",
+    "startedYear": 1396,
+    "finishedYear": 1398,
+    "description": "국보 제1호, 한양도성의 남문이자 대한민국의 랜드마크",
+    "type": "palace"
+  },
+  {
+    "name": "낙안읍성",
+    "startedYear": 1397,
+    "finishedYear": 1397,
+    "description": " 사적 제302호, 왜구의 침략에 대비하여 김빈길 장군에 의해 축성",
+    "type": "military"
+  },
+  {
+    "name": "주자소",
+    "startedYear": 1403,
+    "finishedYear": 1403,
+    "description": "금속 활자를 만들고 인쇄를 담당하던 기관"
+  },
+  {
+    "name": "개천도감",
+    "startedYear": 1411,
+    "finishedYear": 1411,
+    "disabledYear": 1412,
+    "type": "administration",
+    "description": "한성(漢城) 내 하천의 물길을 정비하고 다리를 조성하는 역사를 담당"
+  }
+]
